@@ -20,7 +20,7 @@ public class ShapeCollector {
         }
         return text;
     }
-    public ArrayList<Shape> getShapeList() {
+    public List<Shape> getShapeList() {
         return (ArrayList<Shape>) this.shapeList;
     }
 }
