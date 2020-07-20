@@ -5,5 +5,7 @@ public interface Shape {
 
     public double getField();
 
-    public Boolean equals(Shape shape);
+    public int hashCode();
+
+    public boolean equals(Shape shape);
 }

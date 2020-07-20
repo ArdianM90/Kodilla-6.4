@@ -9,11 +9,13 @@ public class Square implements Shape {
         //this.a = a;
         this.field = Math.pow(a, 2);
     }
-    public Boolean equals(Shape givenShape){
-        if((this.shapeName == givenShape.getShapeName()) && (this.field == givenShape.getField())) {
-            return true;
-        }
-        return false;
+    @Override
+    public int hashCode() {
+        return (int)this.field * this.getShapeName().length();
+    }
+    @Override
+    public boolean equals(Shape givenShape){
+        return this == givenShape;
     }
     public String getShapeName() {
         return this.shapeName;
