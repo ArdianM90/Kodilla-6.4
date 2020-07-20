@@ -99,7 +99,7 @@ public class ShapeCollectorTestSuite {
         //When
         String exit = collector.showFigures();
         //Then
-        if(entry.equals(exit)) {
+        if(entry == exit) {
             System.out.println("Test PASSED");
         } else {
             System.out.println("Showing figure ERROR");

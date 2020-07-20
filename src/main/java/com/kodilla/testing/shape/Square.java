@@ -14,8 +14,12 @@ public class Square implements Shape {
         return (int)this.field * this.getShapeName().length();
     }
     @Override
-    public boolean equals(Shape givenShape){
-        return this == givenShape;
+    public boolean equals(Shape givenShape) {
+        if((givenShape.getShapeName() == this.shapeName) && (givenShape.getField() == this.getField())) {
+            return true;
+        } else {
+            return false;
+        }
     }
     public String getShapeName() {
         return this.shapeName;

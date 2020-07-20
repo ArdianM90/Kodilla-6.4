@@ -17,7 +17,11 @@ public class Triangle implements Shape {
     }
     @Override
     public boolean equals(Shape givenShape){
-        return this == givenShape;
+        if((givenShape.getShapeName() == this.shapeName) && (givenShape.getField() == this.getField())) {
+            return true;
+        } else {
+            return false;
+        }
     }
     public String getShapeName() {
         return this.shapeName;
